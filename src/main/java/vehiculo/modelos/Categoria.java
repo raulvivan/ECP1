@@ -1,11 +1,11 @@
 package vehiculo.modelos;
 
 public enum Categoria {
-    A(0),
-    B(1),
+    A(10),
+    B(15),
     C(2);
     
-    private final int valor;
+    public final int valor;
     
     private Categoria(final int valor){
         this.valor = valor;

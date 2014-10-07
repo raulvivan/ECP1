@@ -20,7 +20,7 @@ public class CocheTest extends VehiculoTest{
 
     @Test
     public void devolverPrecioTest(int dias) {
-        assertEquals(10, coche.devolverPrecio(dias));
+        assertEquals(10.0, coche.devolverPrecio(dias), 10e-3);
     }
     
     
