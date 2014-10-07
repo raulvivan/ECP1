@@ -11,12 +11,10 @@ public class Moto extends Vehiculo{
 
     public double devolverPrecio(int dias) {
         double precio = 0.0;
-        for(int i=1; i<=dias;i++){
-            if(i<=7){
-                precio += precioBase;
-            }else if(i>7){
-                precio += precioDescuento;
-            }
+        if(dias<=7){
+            precio += precioBase;
+        }else if(dias>7){
+            precio += precioDescuento;
         }
         return precio;
     }

@@ -1,10 +1,13 @@
 package vehiculo.modelos;
 
+import java.util.ArrayList;
+
 public class VehiculoHandler {
+    
+    private ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 
     public void darAlta(Vehiculo vehiculo) {
-        // TODO Auto-generated method stub
-        
+        vehiculos.add(vehiculo);
     }
 
     public Object mostrarVehiculos() {
