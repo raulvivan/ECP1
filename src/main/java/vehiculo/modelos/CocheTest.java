@@ -1,17 +1,26 @@
 package vehiculo.modelos;
 
+import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
+
 public class CocheTest extends VehiculoTest{
 
-    @Override
-    public String mostrar() {
-        // TODO Auto-generated method stub
-        return null;
+    private Coche coche;
+    
+    @Before
+    public void before(){
+        coche = new Coche(123, "Coche", Categoria.A);
+    }
+    
+    @Test
+    public void mostrarTest() {
+         assertEquals("El vehiculo es un coche con identificador 123, descripcion coche y categoria A", coche.toString());  
     }
 
-    @Override
-    public int devolverPrecio() {
-        // TODO Auto-generated method stub
-        return 0;
+    @Test
+    public void devolverPrecioTest(int dias) {
+        assertEquals(10, coche.devolverPrecio(dias));
     }
     
     

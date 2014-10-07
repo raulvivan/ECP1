@@ -1,9 +1,13 @@
 package vehiculo.modelos;
 
+import org.junit.Test;
+
 public abstract class VehiculoTest {
     
-    public abstract String mostrar();
+    @Test
+    public abstract void mostrarTest();
     
-    public abstract int devolverPrecio();
+    @Test
+    public abstract void devolverPrecioTest(int dias);
 
 }
