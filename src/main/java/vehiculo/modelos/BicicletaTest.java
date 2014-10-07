@@ -19,8 +19,8 @@ public class BicicletaTest extends VehiculoTest{
     }
 
     @Override
-    public void devolverPrecioTest(int dias) {
-        assertEquals(3.0, bici.devolverPrecio(dias), 10e-3);
+    public void devolverPrecioTest() {
+        assertEquals(3.0, bici.devolverPrecio(1), 10e-3);
     }
 
 }

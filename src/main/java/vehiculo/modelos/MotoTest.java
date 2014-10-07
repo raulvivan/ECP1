@@ -19,8 +19,8 @@ public class MotoTest extends VehiculoTest{
     }
 
     @Test
-    public void devolverPrecioTest(int dias) {
-        assertEquals(8.0, moto.devolverPrecio(dias), 10e-3);
+    public void devolverPrecioTest() {
+        assertEquals(8.0, moto.devolverPrecio(1), 10e-3);
     }
 
 }

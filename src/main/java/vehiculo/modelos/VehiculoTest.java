@@ -8,6 +8,6 @@ public abstract class VehiculoTest {
     public abstract void mostrarTest();
     
     @Test
-    public abstract void devolverPrecioTest(int dias);
+    public abstract void devolverPrecioTest();
 
 }
