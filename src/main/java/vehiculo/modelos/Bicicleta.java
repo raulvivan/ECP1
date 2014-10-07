@@ -1,20 +1,29 @@
 package vehiculo.modelos;
 
 public class Bicicleta extends Vehiculo{
+    
+    private final static int precioBase = 3;
+    private final static int precioDescuento = 2;
 
-    public Bicicleta(int i, String string) {
-          super(i, string);
+    public Bicicleta(int identificador, String descripcion) {
+          super(identificador, descripcion);
     }
 
     public double devolverPrecio(int dias) {
-        // TODO Auto-generated method stub
-        return 0.0;
+        double precio = 0.0;
+        for(int i=1; i<=dias;i++){
+            if(i<=2){
+                precio += precioBase;
+            }else if(i>2){
+                precio += precioDescuento;
+            }
+        }
+        return precio;
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return null;
+        return "El vehiculo es una bicicleta con identificador "+this.identificador+" y descripcion "+this.descripcion;
     }
 
 }

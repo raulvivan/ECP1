@@ -14,7 +14,7 @@ public class Moto extends Vehiculo{
         for(int i=1; i<=dias;i++){
             if(i<=7){
                 precio += precioBase;
-            }else if(precio>7){
+            }else if(i>7){
                 precio += precioDescuento;
             }
         }
@@ -24,7 +24,6 @@ public class Moto extends Vehiculo{
     @Override
     public String toString() {
         return "El vehiculo es una moto con identificador "+this.identificador+" y descripcion "+this.descripcion;
-
     }
 
 }
