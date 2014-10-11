@@ -17,12 +17,13 @@ public class VehiculoHandlerTest {
     
     @Test
     public void mostrarVehiculosTestYdarAlta(){
-        assertEquals("El vehiculo es un coche con identificador 213, descripcion coche y categoria A", handler.mostrarVehiculos());
+    	Vehiculo coche = new Coche(213, "coche", Categoria.A);
+        assertEquals(coche, handler.devolverVehiculo(213));
     }
     
     @Test
     public void darPrecio(){
-        assertEquals(30, handler.darPrecio(213, 4));
+        assertEquals(38.0, handler.darPrecio(213, 4));
     }
     
     

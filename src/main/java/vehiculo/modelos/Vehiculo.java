@@ -2,10 +2,26 @@ package vehiculo.modelos;
 
 public abstract class Vehiculo {
     
-    protected int identificador;
-    protected String descripcion;
+    private int identificador;
+    private String descripcion;
     
-    public Vehiculo(int identificador, String descripcion){
+    public int getIdentificador() {
+		return identificador;
+	}
+
+	public void setIdentificador(int identificador) {
+		this.identificador = identificador;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public Vehiculo(int identificador, String descripcion){
         this.identificador = identificador;
         this.descripcion = descripcion;
     }

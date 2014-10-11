@@ -1,23 +1,22 @@
 package vehiculo.modelos;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class VehiculoHandler {
     
-    private ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
+    private Map<Integer, Vehiculo> vehiculos = new HashMap<Integer, Vehiculo>();
 
     public void darAlta(Vehiculo vehiculo) {
-        vehiculos.add(vehiculo);
+        vehiculos.put(vehiculo.getIdentificador(), vehiculo);
     }
 
-    public Object mostrarVehiculos() {
-        // TODO Auto-generated method stub
-        return null;
+    public Vehiculo devolverVehiculo(int identificador) {
+        return vehiculos.get(identificador);
     }
 
-    public Object darPrecio(int i, int j) {
-        // TODO Auto-generated method stub
-        return null;
+    public Object darPrecio(int identificador, int dias) {
+        return vehiculos.get(identificador).devolverPrecio(dias);
     }
 
 }
