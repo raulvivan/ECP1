@@ -11,8 +11,8 @@ public class VehiculoHandler {
         vehiculos.put(vehiculo.getIdentificador(), vehiculo);
     }
 
-    public Vehiculo devolverVehiculo(int identificador) {
-        return vehiculos.get(identificador);
+    public Map<Integer, Vehiculo> devolverVehiculo() {
+        return vehiculos;
     }
 
     public double darPrecio(int identificador, int dias) {

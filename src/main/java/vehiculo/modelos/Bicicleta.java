@@ -23,7 +23,7 @@ public class Bicicleta extends Vehiculo{
 
     @Override
     public String toString() {
-        return "El vehiculo es una bicicleta con identificador "+this.getIdentificador()+" y descripcion "+this.getDescripcion();
+        return "Bicicleta con identificador "+this.getIdentificador()+" y descripcion "+this.getDescripcion();
     }
 
 }

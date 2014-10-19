@@ -26,7 +26,7 @@ public class Coche extends Vehiculo{
     }
 
     public String toString() {
-        return "El vehiculo es un coche con identificador "+this.getIdentificador()+", descripcion "+this.getDescripcion()+" y categoria "+this.categoria;
+        return "Coche con identificador "+this.getIdentificador()+", descripcion "+this.getDescripcion()+" y categoria "+this.categoria;
     }
 
 }

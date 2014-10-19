@@ -1,5 +1,7 @@
 package vehiculo.controlador;
 
+import java.util.Map.Entry;
+
 import upm.jbb.IO;
 import vehiculo.modelos.Bicicleta;
 import vehiculo.modelos.Categoria;
@@ -34,8 +36,11 @@ public class VehiculoController {
 	}
 	
 	public void devolverVehiculo(){
-		Vehiculo vehiculo = handler.devolverVehiculo(IO.in.readInt("Introduzca el identificador del vehiculo"));
-		IO.out.println(vehiculo.toString());
+		IO.in.clear();
+		for(Entry<Integer, Vehiculo> entry : handler.devolverVehiculo().entrySet()){
+			IO.out.println(entry.getValue().toString()+"\n");
+		}
+		
 	}
 
 }
