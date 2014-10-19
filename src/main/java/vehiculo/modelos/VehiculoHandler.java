@@ -15,7 +15,7 @@ public class VehiculoHandler {
         return vehiculos.get(identificador);
     }
 
-    public Object darPrecio(int identificador, int dias) {
+    public double darPrecio(int identificador, int dias) {
         return vehiculos.get(identificador).devolverPrecio(dias);
     }
 

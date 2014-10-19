@@ -16,7 +16,7 @@ public class VehiculoHandlerTest {
     }
     
     @Test
-    public void mostrarVehiculosTestYdarAlta(){
+    public void devolverVehiculosTestYdarAlta(){
     	Vehiculo coche = new Coche(213, "coche", Categoria.A);
         assertEquals(coche, handler.devolverVehiculo(213));
     }
